@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#060606"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="coding.swagasoft.vehiclealert.SuspensionMalfActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView158"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/suspension_malfunction_indicator" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" Air Suspension Warning Light"
+        android:id="@+id/textView296"
+        android:textSize="40sp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/imageView158"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="The air suspension warning light means there is a problem with the air suspension bags, likely due to a leak or inflation issue. Typically, this will occur if the compressor isn’t providing as much air as it should or if there is a leak in the one of the bags. A leak in one of the bags will cause the ride height to be lower, which is detected by the computer using the height sensor. "
+        android:id="@+id/textView298"
+        android:layout_below="@+id/textView296"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

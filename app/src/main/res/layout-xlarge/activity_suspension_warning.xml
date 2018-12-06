@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#060606"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="coding.swagasoft.vehiclealert.SuspensionWarningActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView135"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/active_suspension_warning" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Suspension Setting  Malfunction "
+        android:id="@+id/textView297"
+        android:textSize="50dp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/imageView135"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="This is Suspension Setting Malfunction Indicator.  They denote settings. Some manufacturer provides the ability to adjust the shock absorber damping mode. A Sport setting will stiffen the ride, while a Comfort setting will soften the ride."
+        android:id="@+id/textView299"
+        android:layout_below="@+id/textView297"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

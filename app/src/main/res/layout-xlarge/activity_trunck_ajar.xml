@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#060606"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="coding.swagasoft.vehiclealert.TrunckAjarActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_trunck_ajar"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/trunk_ajar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Trunk Ajar"
+        android:id="@+id/textView66"
+        android:textColor="#ffffff"
+        android:textSize="50dp"
+        android:layout_below="@+id/imageView_trunck_ajar"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Your trunk is not closed completely. A simple open and close can solve this problem. If it has been checked and the light did not go off, the monitoring sensor needs some attention. Get a professional to fix it."
+        android:id="@+id/textView67"
+        android:layout_below="@+id/textView66"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="coding.swagasoft.vehiclealert.VdcActivity"
+    android:background="#050505">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView83"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/vdc_off_indicator" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Vehicle Dynamics Control Systems"
+        android:id="@+id/textView191"
+        android:layout_below="@+id/imageView83"
+        android:textSize="50dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Your car is equipped with a vehicle dynamic control (VDC) system. It’s designed to monitor the driving conditions and your input (brake use, steering wheel use, etc.) and to step in if necessary. Here’s what it does: The VDC system can control some aspects of the brakes to help prevent wheels from slipping. The VDC system can help prevent the car’s drive wheel from slipping. The system can control brake pressure to correct under steer or over steer (in certain situations).  "
+        android:id="@+id/textView192"
+        android:layout_below="@+id/textView191"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff" />
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#060606"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="coding.swagasoft.vehiclealert.SysetemServiceindActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView105"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/alert_system_service_indicator_symbol" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Lane Departure Prevention"
+        android:id="@+id/textView234"
+        android:textColor="#ffffff"
+        android:textSize="50dp"
+        android:layout_below="@+id/imageView105"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="The lane departure light means the vehicle is detected to be moving out of its current lane without signaling. This system typically uses a forward facing camera that can identify the lane lines on the road as you are driving. If the computer notices you are moving to one side without a turn signal, it will alert the driver with a light, sound, vibration, or combination of the three.  "
+        android:id="@+id/textView235"
+        android:layout_below="@+id/textView234"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#060606"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="coding.swagasoft.vehiclealert.NightVionTwoActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView124"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/night_vision_pedes" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Night Vision Assist"
+        android:id="@+id/textView269"
+        android:textSize="50sp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/imageView124"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="The night vision assist uses a far infrared camera that detects people and larger wild animals at distances between roughly 10 and 90 meters. The camera reacts to the heat radiated by objects in the recorded scene. A computer transforms the information from the camera into black-and-white images and displays them on the central display located between the instruments."
+        android:id="@+id/textView270"
+        android:layout_below="@+id/textView269"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

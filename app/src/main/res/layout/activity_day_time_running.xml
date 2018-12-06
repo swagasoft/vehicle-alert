@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#060606"
+    tools:context="coding.swagasoft.vehiclealert.DayTimeRunningActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView90"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/daytime_running_lights" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Daytime Running Light"
+        android:id="@+id/textView202"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/imageView90"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="It is being used as a car safety device while driving during the daytime. Every car makes uses of lights in the night. This was a major concern for many people when it was first introduced. The primary purpose of DRLs is to enhance the visibility of your car during daylight hours."
+        android:id="@+id/textView203"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView202"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

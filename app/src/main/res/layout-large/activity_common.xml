@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="true"
+    android:fillViewport="true"
+    tools:context="coding.swagasoft.vehiclealert.CommonActivity"
+    android:background="#050505">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adView"
+        android:layout_alignParentStart="true"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingRight="0dp"
+            android:paddingLeft="-10dp"
+            android:paddingBottom="50dp"
+            android:layout_height="wrap_content">
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Common Alert"
+                android:id="@+id/textView6"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ffffff" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_allwheellock"
+                android:src="@drawable/all_wheel_lock"
+                android:onClick="allWheelLock"
+                android:layout_alignTop="@+id/imageButton_bliss"
+                android:layout_toStartOf="@+id/imageButton_bliss" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_bliss"
+                android:src="@drawable/blis"
+                android:onClick="setBlissClick"
+                android:layout_below="@+id/textView6"
+                android:layout_toStartOf="@+id/imageButton_charging" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_charging"
+                android:src="@drawable/charging"
+                android:onClick="chargingClick"
+                android:layout_below="@+id/textView6"
+                android:layout_toStartOf="@+id/imageButton_enginetartoper" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_enginetartoper"
+                android:src="@drawable/eengine_start_operation_indicator"
+                android:onClick="engineOperatorClick"
+                android:layout_below="@+id/textView6"
+                android:layout_toEndOf="@+id/textView6" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_electricdifferenc"
+                android:src="@drawable/electronic_differential"
+                android:layout_below="@+id/imageButton_allwheellock"
+                android:layout_toStartOf="@+id/imageButton_bliss"
+                android:onClick="electronicDiff"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton4_eml"
+                android:src="@drawable/eml_indicator"
+                android:layout_below="@+id/imageButton_bliss"
+                android:layout_toStartOf="@+id/imageButton_charging"
+                android:onClick="emlIndicateClick"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_enginestartsysone"
+                android:src="@drawable/engine_start_system"
+                android:layout_below="@+id/imageButton_charging"
+                android:onClick="engineStartOne"
+                android:layout_toStartOf="@+id/imageButton_enginetartoper" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButtonsystwo"
+                android:src="@drawable/engine_start_systemtwo"
+                android:layout_below="@+id/imageButton_enginetartoper"
+                android:layout_alignStart="@+id/imageButton_enginetartoper"
+                android:onClick="engineStartTwo"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_etcs"
+                android:src="@drawable/etcs_indicator"
+                android:onClick="etcsClick"
+                android:layout_below="@+id/imageButton_electricdifferenc"
+                android:layout_alignStart="@+id/imageButton_electricdifferenc" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_euro_abs"
+                android:src="@drawable/euro_abs"
+                android:layout_below="@+id/imageButton4_eml"
+                android:onClick="euroAbsClick"
+                android:layout_toEndOf="@+id/imageButton_electricdifferenc" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_fourlow"
+                android:src="@drawable/four_low"
+                android:onClick="fourLowClick"
+                android:layout_below="@+id/imageButton_enginestartsysone"
+                android:layout_toStartOf="@+id/imageButton_fourxfour" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_fourxfour"
+                android:src="@drawable/four_x_four"
+                android:layout_alignTop="@+id/imageButton_fourlow"
+                android:layout_alignStart="@+id/imageButtonsystwo"
+                android:onClick="fourTimesFour"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButtonfourwd"
+                android:src="@drawable/fourwd_lock_indicator"
+                android:onClick="fourWdlock"
+                android:layout_above="@+id/imageButton_overdrive"
+                android:layout_toStartOf="@+id/imageButton_lowfuel" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_lowfuel"
+                android:src="@drawable/llow_fuel"
+                android:onClick="lowFuelClick"
+                android:layout_below="@+id/imageButton_euro_abs"
+                android:layout_alignStart="@+id/imageButton_powerlimitation" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_lowpower"
+                android:src="@drawable/low_power"
+                android:onClick="lowPowerClick"
+                android:layout_below="@+id/imageButton_euro_abs"
+                android:layout_toEndOf="@+id/imageButton_euro_abs" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_lowwindshield"
+                android:src="@drawable/low_windshield_washer_fluid"
+                android:layout_below="@+id/imageButton_fourxfour"
+                android:layout_alignStart="@+id/imageButton_fourxfour"
+                android:onClick="lowWasherFluid"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_overdrive"
+                android:src="@drawable/slip_indicator_symbolreal"
+                android:onClick="slipIndicator"
+                android:layout_below="@+id/imageButton_lowfuel"
+                android:layout_toStartOf="@+id/imageButton_powerlimitation" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_powerlimitation"
+                android:src="@drawable/power_limitation"
+                android:layout_alignTop="@+id/imageButton_serviceremind"
+                android:layout_toStartOf="@+id/imageButton_rearlock"
+                android:onClick="powerLimitation"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_rearlock"
+                android:src="@drawable/rear_lock"
+                android:layout_alignTop="@+id/imageButton_serviceremind"
+                android:layout_toStartOf="@+id/imageButton_serviceremind"
+                android:onClick="rearLockClick"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_serviceremind"
+                android:layout_alignBottom="@+id/imageButton_overdrive"
+                android:layout_alignStart="@+id/imageButton_lowwindshield"
+                android:src="@drawable/service_reminder"
+                android:onClick="serviceReminder"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_slipsymbol"
+                android:src="@drawable/manual"
+                android:onClick="manualClick"
+                android:layout_below="@+id/imageButton_powerlimitation"
+                android:layout_toStartOf="@+id/imageButton_tractioncontrol" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_tractioncontrol"
+                android:src="@drawable/traction_control_system"
+                android:onClick="tractionControlSys"
+                android:layout_below="@+id/imageButton_powerlimitation"
+                android:layout_toStartOf="@+id/imageButton_vdc" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_vdc"
+                android:src="@drawable/vdc_off_indicator"
+                android:onClick="vdcClick"
+                android:layout_below="@+id/imageButton_rearlock"
+                android:layout_toStartOf="@+id/imageButton4_slipoff" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton4_slipoff"
+                android:src="@drawable/vsc_slip_off_indicator"
+                android:onClick="slipOffIndicator"
+                android:layout_below="@+id/imageButton_rearlock"
+                android:layout_toEndOf="@+id/imageButton_rearlock" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9044413020226754/8578748314">
+    </com.google.android.gms.ads.AdView>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton4"
+        android:src="@drawable/over_drive"
+        android:onClick="overDrive"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/adView"
+        android:layout_marginStart="59dp" />
+
+
+</RelativeLayout>

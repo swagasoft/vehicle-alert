@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#060606"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="coding.swagasoft.vehiclealert.LowWasherFluidActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView79"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/low_windshield_washer_fluid" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Washer Fluid Low Warning"
+        android:id="@+id/textView180"
+        android:textColor="#ffffff"
+        android:textSize="40dp"
+        android:layout_below="@+id/imageView79"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="This light’s only function is to let the driver know the fluid is low and to remind them to go fill it up. Once you have filled up the reservoir with fluid, the light should go out immediately. A malfunctioning fluid level sensor can keep the light on, even if the reservoir is completely full. In that case, ensure that you have the sensor tested and replaced, if necessary.  "
+        android:id="@+id/textView181"
+        android:layout_below="@+id/textView180"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

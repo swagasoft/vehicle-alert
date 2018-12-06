@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:fillViewport="true"
+    tools:context="coding.swagasoft.vehiclealert.HomeActivity"
+    android:background="#0a0101">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="500dp"
+            android:layout_height="70dp"
+            android:text="WARNING ALERT"
+            android:id="@+id/button_warn"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:background="@drawable/warning_color"
+            android:onClick="setWarningClick"
+            android:layout_above="@+id/button_safety"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="500dp"
+            android:layout_height="70dp"
+            android:text="SAFETY ALERT"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="#ffffff"
+            android:id="@+id/button_safety"
+            android:background="@drawable/safety_color"
+            android:onClick="setSaftyClick"
+            android:layout_above="@+id/button_alert"
+            android:layout_alignStart="@+id/button_warn" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="500dp"
+            android:layout_height="70dp"
+            android:text="COMMON ALERT"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:id="@+id/button_alert"
+            android:background="@drawable/common_color"
+            android:onClick="setCommonClick"
+            android:layout_above="@+id/button_light"
+            android:layout_alignStart="@+id/button_safety" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="500dp"
+            android:layout_height="70dp"
+            android:textStyle="bold"
+            android:text="LIGHTING INDICATOR"
+            android:textSize="30dp"
+            android:textColor="#ffffff"
+            android:id="@+id/button_light"
+            android:background="@drawable/lighting_color"
+            android:onClick="setLightingClick"
+            android:layout_above="@+id/button5_aancedv"
+            android:layout_alignStart="@+id/button_alert" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="500dp"
+            android:layout_height="70dp"
+            android:textStyle="bold"
+            android:text="ADVANCE FEATURES"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:id="@+id/button5_aancedv"
+            android:background="@drawable/advance_color"
+            android:onClick="setAdvanceClick"
+            android:layout_above="@+id/button_special"
+            android:layout_alignStart="@+id/button_light" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="500dp"
+            android:layout_height="70dp"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="#ffffff"
+            android:text="SPECIAL FFATURES"
+            android:id="@+id/button_special"
+            android:background="@drawable/special_color"
+            android:onClick="setSpecialFeatures"
+            android:layout_above="@+id/button_power"
+            android:layout_alignStart="@+id/button5_aancedv" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="500dp"
+            android:layout_height="70dp"
+            android:textStyle="bold"
+            android:text="DIESEL POWER"
+            android:textColor="#ffffff"
+            android:id="@+id/button_power"
+            android:textSize="30dp"
+            android:background="@drawable/diesel_color"
+            android:onClick="setDieselClick"
+            android:layout_above="@+id/button8"
+            android:layout_alignStart="@+id/button_special" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="500dp"
+            android:layout_height="70dp"
+            android:textStyle="bold"
+            android:text="HELP and SUPPORT"
+            android:textSize="30dp"
+            android:textColor="#ffffff"
+            android:id="@+id/button8"
+            android:background="@drawable/help_color"
+            android:onClick="setHelpClick"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/button_power" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/dasboardswag"
+            android:scaleType="fitCenter"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

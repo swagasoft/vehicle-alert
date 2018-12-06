@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#060606"
+
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:nestedScrollingEnabled="true"
+    tools:context="coding.swagasoft.vehiclealert.EuroAbsActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView73"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/euro_abs" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Anti-Lock Brake System"
+            android:textColor="#ffffff"
+            android:id="@+id/textView168"
+            android:layout_below="@+id/imageView73"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="The ABS system uses sensors at each wheel to monitor their rotational speed. A computer monitors the signals from all four wheels and the position of the brake pedal to make sure that the vehicle is stable and under control. If the computer notices any abnormal signals, or the lack of a signal from any of the sensors, it will turn the ABS light on, to alert the driver of an issue. In addition to monitoring the wheel speed sensors, the computer can turn the ABS light on for other reasons like low brake fluid levels or a blown fuse. Some ABS systems may flash the light a few times and then leave it on constantly. The number of flashes refers to a trouble code and can help you identify the issue.  "
+            android:id="@+id/textView169"
+            android:layout_below="@+id/textView168"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+</ScrollView>

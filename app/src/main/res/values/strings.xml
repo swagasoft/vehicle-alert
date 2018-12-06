@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Vehicle Alert</string>
+    <string name="title_activity_high_volt_batt">HighVoltBattActivity</string>
+
+</resources>

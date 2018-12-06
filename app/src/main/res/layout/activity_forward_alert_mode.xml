@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#060606"
+    tools:context="coding.swagasoft.vehiclealert.ForwardAlertModeActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView115"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/fforward_alert_indicator" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Forward Alert Indicator "
+        android:id="@+id/textView252"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/imageView115"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Forward collision warning scans the road ahead while you drive. It’s designed to warn you if you’re about to crash into a slower moving or stopped car.  NOTE: Never wait for a collision warning. When driving you are responsible for maintaining the correct distance and speed, even when the system is used.   "
+        android:id="@+id/textView253"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView252"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

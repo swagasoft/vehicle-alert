@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#060606"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="coding.swagasoft.vehiclealert.EtcsActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView72"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/etcs_indicator" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Electronic Throttle Control (ETC)"
+        android:id="@+id/textView166"
+        android:textSize="40sp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/imageView72"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="The Throttle Controller is the electronic version of what used to be operated by a mechanical cable. The function of the throttle control is operated by what we know as an accelerator or gas pedal. This is to alert the driver that a problem with the throttle control exists and corrective action is needed by a certified mechanic.  If you notice that while pressing down on the throttle pedal that the car does not accelerate, it may be caused by a damaged throttle controller and should be inspected and serviced by a professional mechanic. "
+        android:id="@+id/textView167"
+        android:layout_below="@+id/textView166"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

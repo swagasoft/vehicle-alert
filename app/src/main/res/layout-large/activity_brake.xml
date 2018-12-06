@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#060606"
+    tools:context="coding.swagasoft.vehiclealert.BrakeActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView36"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/brake" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Automatic Shift Lock"
+        android:textSize="40sp"
+        android:id="@+id/textView80"
+        android:layout_below="@+id/imageView36"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="This is a reminder that the brake must be engaged to start a push button on keyless start car. The image may appear on an instrument panel or on the console near the shifter. With a start push button or keyless start vehicle, the indicator will appear on the instrument panel."
+        android:id="@+id/textView81"
+        android:layout_below="@+id/textView80"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"/>
+</RelativeLayout>

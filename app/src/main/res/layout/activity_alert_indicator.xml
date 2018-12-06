@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#060606"
+    tools:context="coding.swagasoft.vehiclealert.AlertIndicatorActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView136"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/alert_indicator" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Attention Assist Warning"
+        android:id="@+id/textView300"
+        android:layout_below="@+id/imageView136"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=" Attention Assist is a system that alert drivers when they begin showing signs of fatigue behind the wheel.  The system will compare the driver’s actions to the road conditions and will take note of rough roads and crosswinds. If the computer decides that the driver is the cause of abnormal driving, it will turn on the Attention Assist light on the dashboard.  An audible tone is also added. The tone and will be repeated if the driving pattern continues. "
+        android:id="@+id/textView301"
+        android:layout_below="@+id/textView300"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffff"/>
+</RelativeLayout>

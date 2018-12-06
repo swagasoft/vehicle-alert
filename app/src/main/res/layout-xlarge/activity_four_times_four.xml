@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#060606"
+
+    tools:context="coding.swagasoft.vehiclealert.FourTimesFourActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView75"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/four_x_four" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" 4 Wheel Drive Low "
+        android:id="@+id/textView172"
+        android:textColor="#ffffff"
+        android:textSize="50dp"
+        android:layout_below="@+id/imageView75"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=". This indicates that the 4 wheel drive is engaged at a low gear ratio for maximum power. You may need to activate the four wheel-drives in muddy road conditions. When the light blinks it means the 4wd is not working. You need to visit a professional to trouble shoot the problem.  "
+        android:id="@+id/textView173"
+        android:layout_below="@+id/textView172"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

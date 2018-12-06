@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#060606"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="coding.swagasoft.vehiclealert.PredictiveActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView152"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/predictive" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Predictive Efficiency Assist "
+        android:id="@+id/textView332"
+        android:textColor="#ffffff"
+        android:textSize="50dp"
+        android:layout_below="@+id/imageView152"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="This system informs the driver when he should take his foot off the accelerator. This is when the car efficiently exploits the outdoor conditions, such as gradient, speed limits and other vehicles in front . Manufacturer are working on new, intelligent technologies to reduce fuel consumption even further. The predictive efficiency assistant uses data from the navigation system to enable the car to slow down in an anticipatory manner.  "
+        android:id="@+id/textView333"
+        android:layout_below="@+id/textView332"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

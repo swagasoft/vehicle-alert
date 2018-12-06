@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#060606"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="coding.swagasoft.vehiclealert.OverDriveActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView85"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/over_drive" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" "
+        android:textColor="#ffffff"
+        android:id="@+id/textView195"
+        android:layout_below="@+id/imageView85"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="50dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Over Drive Off"
+        android:id="@+id/textView196"
+        android:layout_below="@+id/imageView85"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="•	This means that the overdrive in your car is off. Overdrive is simply a mechanism that allows your car to maintain a steady speed while you are driving, and reduces engine speed by shifting your car into a gear ratio that is higher than the drive gear. •	Overdrive improves fuel economy, and makes for less wear and tear on the vehicle when you are driving at highway speeds. Having the overdrive off is fine if you are driving in hilly areas, but if you are on the highway, it is best to have it on because you will get better gas mileage.  "
+        android:id="@+id/textView197"
+        android:textColor="#ffffff"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9044413020226754/8578748314">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

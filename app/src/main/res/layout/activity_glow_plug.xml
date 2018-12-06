@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#060606"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="coding.swagasoft.vehiclealert.glowPlugActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView170"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/glow_plug_symbol_indicator" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="The diesel engine pre-glow light turns on while your engine is warming up. If it flashes, an issue has been detected, such as a worn out glow plug. Normally, the glow plug indicator light will come on only when the engine is cold. If a fault has been detected, the computer will save a code in its memory to help diagnose the issue. Have a certified technician hook up a scan tool to your car to read this code.  "
+        android:id="@+id/textView359"
+        android:layout_below="@+id/textView360"
+        android:textColor="#ffffff"
+        android:layout_alignEnd="@+id/textView360" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" Diesel Engine Pre-Glow Warning"
+        android:id="@+id/textView360"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/imageView170"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

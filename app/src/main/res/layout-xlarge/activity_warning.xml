@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#050505"
+    >
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="0dp"
+        android:paddingLeft="-10dp"
+        android:paddingBottom="50dp"
+        android:nestedScrollingEnabled="true"
+       >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:paddingRight="0dp"
+    android:paddingLeft="-10dp"
+    android:paddingBottom="50dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+
+        android:text="Warning Alert"
+        android:textSize="50dp"
+        android:id="@+id/textView17"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_brakelow"
+        android:src="@drawable/brake_fluid_low"
+        android:scaleType="matrix"
+        android:onClick="setBrakelowClick"
+        android:layout_alignTop="@+id/imageButton_braketrouble"
+        android:layout_toStartOf="@+id/imageButton_braketrouble" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_braketrouble"
+        android:src="@drawable/brake_trouble_indicator"
+        android:onClick="setBrakeTest"
+        android:layout_alignTop="@+id/imageButton_braketroublrcana"
+        android:layout_toStartOf="@+id/imageButton_braketroublrcana" />
+
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_braketroublrcana"
+        android:src="@drawable/brake_trouble_indicator_canada"
+        android:onClick="setBrakeTroublrCanada"
+        android:layout_alignTop="@+id/imageButton_batter"
+        android:layout_toStartOf="@+id/imageButton_batter" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_batter"
+        android:src="@drawable/charge_system_trouble_indicator"
+        android:onClick="setChargesys"
+        android:layout_below="@+id/textView17"
+        android:layout_toEndOf="@+id/textView17" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_doorajar"
+        android:src="@drawable/door_ajar_warning_indicator"
+        android:onClick="setDoorAjar"
+        android:layout_below="@+id/imageButton_brakelow"
+        android:layout_toStartOf="@+id/imageButtondrivetrantro" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtondrivetrantro"
+        android:src="@drawable/drivetrain_trouble_indicator"
+        android:onClick="setDrivetrain"
+        android:layout_alignTop="@+id/imageButton_doorajar"
+        android:layout_alignStart="@+id/imageButton_braketrouble" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_externalsound"
+        android:src="@drawable/external_sound_system"
+        android:onClick="setExernalClick"
+        android:layout_alignTop="@+id/imageButtondrivetrantro"
+        android:layout_alignStart="@+id/imageButton_braketroublrcana" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_hybridservice"
+        android:src="@drawable/hhybrid_service"
+        android:onClick="setHybridService"
+        android:layout_alignTop="@+id/imageButton_externalsound"
+        android:layout_alignStart="@+id/imageButton_batter" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_highvolfault"
+        android:src="@drawable/high_voltage_system_fault"
+        android:onClick="setHighVoltageFault"
+        android:layout_below="@+id/imageButton_doorajar"
+        android:layout_toStartOf="@+id/imageButtondrivetrantro" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_highbattfault"
+        android:src="@drawable/high_volt_battery_low"
+        android:onClick="setHighVolbattery"
+        android:layout_alignTop="@+id/imageButton_highvolfault"
+        android:layout_alignStart="@+id/imageButtondrivetrantro" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButto_hybridbatterytr"
+        android:src="@drawable/hybrid_battery_trouble_indicator"
+        android:onClick="setBatteryTroubleMain"
+        android:layout_alignTop="@+id/imageButton_highbattfault"
+        android:layout_alignStart="@+id/imageButton_externalsound" />
+
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_hridwarning"
+        android:src="@drawable/hybrid_warning"
+        android:onClick="setHybridWarning"
+        android:layout_alignTop="@+id/imageButto_hybridbatterytr"
+        android:layout_alignStart="@+id/imageButton_hybridservice" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:src="@drawable/key_not_found"
+        android:onClick="setKeyNotfound"
+        android:layout_below="@+id/imageButton_highvolfault"
+        android:layout_toStartOf="@+id/imageButton_lock" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_lock"
+        android:src="@drawable/lock"
+        android:onClick="setLockClick"
+        android:layout_alignTop="@+id/imageButton"
+        android:layout_alignStart="@+id/imageButton_highbattfault" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_lowcolantwa"
+        android:src="@drawable/low_coolantwarn"
+        android:onClick="setCollantwarn"
+        android:layout_alignTop="@+id/imageButton_lock"
+        android:layout_alignStart="@+id/imageButto_hybridbatterytr" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_lowOillevel"
+        android:src="@drawable/low_oil_level_symbol"
+        android:onClick="setOilLowLevel"
+        android:layout_above="@+id/imageButton3_masterwarning"
+        android:layout_toEndOf="@+id/imageButton_lowcolantwa" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton3_masterwarning"
+        android:src="@drawable/master_warning_light"
+        android:onClick="masterWarning"
+        android:layout_below="@+id/imageButton"
+        android:layout_toStartOf="@+id/imageButton2oil_trouble" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2oil_trouble"
+        android:layout_alignBottom="@+id/imageButton3_masterwarning"
+        android:layout_alignStart="@+id/imageButton_lock"
+        android:src="@drawable/oil_trouble_indicator"
+        android:onClick="oilTroubleIndicator"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2"
+        android:src="@drawable/open_hood_indicator"
+        android:onClick="openHoodClick"
+        android:layout_alignBottom="@+id/imageButton2oil_trouble"
+        android:layout_alignStart="@+id/imageButton_lowcolantwa" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_parkbrake"
+        android:src="@drawable/park_brake_indicator"
+        android:onClick="parkBrakeClick"
+        android:layout_alignBottom="@+id/imageButton2"
+        android:layout_alignStart="@+id/imageButton_lowOillevel" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_powertrain"
+        android:src="@drawable/powertrain_trouble_indicator"
+        android:onClick="powerTRainTro"
+        android:layout_below="@+id/imageButton2"
+        android:layout_alignEnd="@+id/imageButton_doorajar" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton3_rrearsit"
+        android:layout_alignBottom="@+id/imageButton_powertrain"
+        android:layout_alignStart="@+id/imageButton2oil_trouble"
+        android:src="@drawable/rear_rearbelt"
+        android:onClick="rearBeltClick"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton3_security"
+        android:src="@drawable/security_indicator_symbol"
+        android:onClick="securityIndicator"
+        android:layout_alignBottom="@+id/imageButton3_rrearsit"
+        android:layout_alignStart="@+id/imageButton2" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_serviceelectparking"
+        android:src="@drawable/service_electric_parking_brake"
+        android:onClick="serviceElectricPark"
+        android:layout_above="@+id/imageButton_srstext"
+        android:layout_alignStart="@+id/imageButton_parkbrake" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_srstext"
+        android:src="@drawable/srss_text_indicator"
+        android:onClick="setSrsClick"
+        android:layout_below="@+id/imageButton_powertrain"
+        android:layout_alignStart="@+id/imageButton_transwarn" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_srsairbag"
+        android:layout_alignBottom="@+id/imageButton_srstext"
+        android:layout_alignStart="@+id/imageButton3_rrearsit"
+        android:src="@drawable/srssair_bag_indicator"
+        android:onClick="setAirBagballClick"/>
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_steeringtrouble"
+        android:src="@drawable/steering_trouble_indicator"
+        android:layout_alignTop="@+id/imageButton_srsairbag"
+        android:layout_alignStart="@+id/imageButton3_security"
+        android:onClick="steeringTrouble"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_tempwarn"
+        android:src="@drawable/temperature_indicator"
+        android:layout_alignTop="@+id/imageButton_srstext"
+        android:layout_toEndOf="@+id/imageButton_steeringtrouble"
+        android:onClick="temperatureWarn"/>
+
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_transwarn"
+        android:src="@drawable/transmission_temperature_warning"
+        android:layout_below="@+id/imageButton_srstext"
+        android:layout_alignEnd="@+id/imageButton3_masterwarning"
+        android:onClick="transmissionTemp"/>
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton3"
+        android:layout_alignBottom="@+id/imageButton_transwarn"
+        android:layout_alignStart="@+id/imageButton_srsairbag"
+        android:src="@drawable/trunk_ajar"
+        android:onClick="truncAjarClick"/>
+
+
+
+</RelativeLayout>
+
+
+    </ScrollView>
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9044413020226754/8578748314">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

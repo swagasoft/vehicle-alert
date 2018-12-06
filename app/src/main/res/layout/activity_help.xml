@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#030303"
+    android:fillViewport="true"
+
+    tools:context="coding.swagasoft.vehiclealert.HelpActivity">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Message Online Mechanic"
+            android:id="@+id/facbook_btn"
+            android:background="#065c8d"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="10dp"
+            android:layout_above="@+id/button"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Maintenace tips"
+            android:id="@+id/button"
+            android:textStyle="bold"
+            android:background="#19f7bf"
+            android:layout_marginBottom="10dp"
+            android:textColor="#f80f0f"
+            android:onClick="maintenaceClick"
+            android:layout_above="@+id/email_btn"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EMAIL US"
+            android:id="@+id/email_btn"
+            android:textColor="#f80f0f"
+            android:background="#19f7bf"
+            android:onClick="sendMail"
+            android:textStyle="bold"
+            android:layout_marginBottom="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:text="If you need help about your vehicle, maintenance tips, repair help. Please message our online professional mechanic below. If you want us to add more feature in our next up update, please email us below. "
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_marginTop="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId=" ca-app-pub-9044413020226754/8578748314">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

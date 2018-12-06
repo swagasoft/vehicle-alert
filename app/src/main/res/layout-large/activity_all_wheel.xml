@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#060606"
+    tools:context="coding.swagasoft.vehiclealert.AllWheelActivity">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/all_wheel_lock"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView177" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="The all-wheel drive (AWD) lock "
+        android:id="@+id/textView148"
+        android:textColor="#ffffff"
+        android:textSize="40dp"
+        android:layout_below="@+id/imageView177"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="It means that the all-wheel drive system is locked. In this condition, power is continuously sent to all four wheels(all wheel engaged). All-wheel drive lock mode should be used when the vehicle is being driven on rough roads, at low speeds. on paved or slippery roads.  If the vehicle is driven at high speeds in all-wheel drive lock mode, Transmission can be damage. It is adviser able to drive with auto mode.   "
+        android:id="@+id/textView149"
+        android:layout_below="@+id/textView148"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:layout_alignParentStart="true" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9044413020226754/8578748314">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

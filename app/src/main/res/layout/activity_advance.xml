@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="true"
+    android:fillViewport="true"
+    android:background="#050505"
+    tools:context="coding.swagasoft.vehiclealert.AdvanceActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingRight="0dp"
+        android:paddingLeft="-10dp"
+        android:paddingBottom="50dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Advance Features"
+            android:id="@+id/textView7"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_adaptive"
+            android:layout_below="@+id/textView7"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/aadaptive"
+            android:onClick="adaptiveClick"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_adativecruise"
+            android:src="@drawable/adaptive_cruise_control_indicator_symbol"
+            android:layout_alignTop="@+id/imageButton_adaptive"
+            android:layout_toEndOf="@+id/imageButton_adaptive"
+            android:onClick="adapiveCruiseClick"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_alertsystemsrvic"
+            android:layout_below="@+id/textView7"
+            android:layout_toEndOf="@+id/imageButton_adativecruise"
+            android:onClick="systemServiceIndicator"
+            android:src="@drawable/alert_system_service_indicator_symbol" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_aslindicator"
+            android:layout_alignBottom="@+id/imageButton_adativecruise"
+            android:layout_toEndOf="@+id/imageButton_alertsystemsrvic"
+            android:src="@drawable/asl_indicator"
+            android:onClick="aslOnClick"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_blinfspot"
+            android:layout_below="@+id/imageButton_adativecruise"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/blind_spot_indicator"
+            android:onClick="blindSportClick"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_cong"
+            android:src="@drawable/ccong"
+            android:onClick="congClick"
+            android:layout_below="@+id/imageButton_adativecruise"
+            android:layout_toStartOf="@+id/imageButton_alertsystemsrvic" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton8"
+            android:layout_alignBottom="@+id/imageButton_cong"
+            android:layout_toEndOf="@+id/imageButton_cong"
+            android:src="@drawable/collission_warning_off"
+            android:onClick="collissionWarningClick"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_crawlscontrol"
+            android:layout_alignBottom="@+id/imageButton8"
+            android:layout_toEndOf="@+id/imageButton8"
+            android:src="@drawable/crawl_control_indicator_symbol"
+            android:onClick="crawlControlIndicator"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_distancewarning"
+            android:layout_below="@+id/imageButton_blinfspot"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/distance_warning_indicator"
+            android:onClick="distanceWarningClick"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_evemode"
+            android:layout_alignBottom="@+id/imageButton_distancewarning"
+            android:layout_toEndOf="@+id/imageButton_blinfspot"
+            android:src="@drawable/ev_mode_indicator"
+            android:onClick="eveModeClick"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_evemodetwo"
+            android:layout_alignBottom="@+id/imageButton_evemode"
+            android:layout_toEndOf="@+id/imageButton_evemode"
+            android:src="@drawable/eve_mode_indicator_symbol"
+            android:onClick="eveModeClickTwo"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_follow"
+            android:src="@drawable/ffollow_mode_indicator"
+            android:onClick="followModeClick"
+            android:layout_below="@+id/imageButton_crawlscontrol"
+            android:layout_alignStart="@+id/imageButton_crawlscontrol" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_forwardtwo"
+            android:layout_below="@+id/imageButton_evemodetwo"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/fforward_alert_indicator"
+            android:onClick="forwardAlertClick"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_forwardcollision"
+            android:layout_alignBottom="@+id/imageButton_forwardtwo"
+            android:layout_toEndOf="@+id/imageButton_forwardtwo"
+            android:src="@drawable/fforward_collision_system_fault"
+            android:onClick="forWardCollisionFault"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_frontcolwarning"
+            android:layout_alignBottom="@+id/imageButton_forwardcollision"
+            android:layout_toEndOf="@+id/imageButton_forwardcollision"
+            android:src="@drawable/ffront_end_collision_warning"
+            android:onClick="frontEndClick"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_gradeassist"
+            android:layout_alignBottom="@+id/imageButton_frontcolwarning"
+            android:layout_alignStart="@+id/imageButton_follow"
+            android:src="@drawable/grade_assist"
+            android:onClick="gradeAssistClick"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_hillstart"
+            android:src="@drawable/hiill_start"
+            android:layout_below="@+id/imageButton_forwardtwo"
+            android:layout_alignParentStart="true"
+            android:onClick="hillStartClick"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_laneone"
+            android:layout_alignBottom="@+id/imageButton_hillstart"
+            android:layout_toEndOf="@+id/imageButton_hillstart"
+            android:src="@drawable/lane_departure_indicator"
+            android:onClick="laneDepatureClick"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_lanetwo"
+            android:layout_alignBottom="@+id/imageButton_laneone"
+            android:layout_toEndOf="@+id/imageButton_laneone"
+            android:src="@drawable/lane_departure_warning"
+            android:onClick="laneDetatureWarn"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonlanethree"
+            android:layout_alignBottom="@+id/imageButton_lanetwo"
+            android:layout_alignStart="@+id/imageButton_gradeassist"
+            android:src="@drawable/lane_departure_warningtwo"
+            android:onClick="laneDepatureTwo"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonnightvisionan"
+            android:layout_below="@+id/imageButton_hillstart"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/night_vision_an"
+            android:onClick="nightvisionClick"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_nightvisionap"
+            android:layout_alignBottom="@+id/imageButtonnightvisionan"
+            android:layout_toEndOf="@+id/imageButton_distancewarning"
+            android:src="@drawable/night_vision_pedes"
+            android:onClick="nightVisionTwo"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_parkingassist"
+            android:layout_alignBottom="@+id/imageButton_nightvisionap"
+            android:layout_toEndOf="@+id/imageButton_laneone"
+            android:src="@drawable/parking_assistant"
+            android:onClick="parkingAssistance"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_parkassisttwo"
+            android:layout_alignBottom="@+id/imageButton_parkingassist"
+            android:layout_alignStart="@+id/imageButtonlanethree"
+            android:src="@drawable/parking_assistant_two"
+            android:onClick="parkingAssistTwo"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_pedestrainsound"
+            android:layout_below="@+id/imageButtonnightvisionan"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/pedestrian_sound"
+            android:onClick="pesdestrainSound"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonpedeswarn"
+            android:layout_alignBottom="@+id/imageButton_pedestrainsound"
+            android:layout_toEndOf="@+id/imageButton_pedestrainsound"
+            android:src="@drawable/pedestrian_warning"
+            android:onClick="pedestrainWarning"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_warntwo"
+            android:layout_alignBottom="@+id/imageButtonpedeswarn"
+            android:layout_toEndOf="@+id/imageButtonpedeswarn"
+            android:src="@drawable/pedestrian_warninintwo"
+            android:onClick="pedestrainWarnTwo"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_pluginindicator"
+            android:layout_alignBottom="@+id/imageButton_warntwo"
+            android:layout_alignStart="@+id/imageButton_parkassisttwo"
+            android:src="@drawable/plug_in_indicator"
+            android:onClick="plugIndicatorClick"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_block_indicator"
+            android:layout_below="@+id/imageButton_pedestrainsound"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/radar_blocked_indicator"
+            android:onClick="raderBlocked"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_ready"
+            android:layout_alignBottom="@+id/imageButton_block_indicator"
+            android:layout_toEndOf="@+id/imageButton_block_indicator"
+            android:src="@drawable/ready_indicator"
+            android:onClick="readyIndicator"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_sesnsorblock"
+            android:src="@drawable/sensor_block_indicator_symbol"
+            android:layout_below="@+id/imageButton_warntwo"
+            android:layout_alignStart="@+id/imageButton_warntwo"
+            android:onClick="sensorBlockClick"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_steeringassist"
+            android:layout_alignBottom="@+id/imageButton_sesnsorblock"
+            android:layout_toEndOf="@+id/imageButton_sesnsorblock"
+            android:src="@drawable/steering_assist_indicator"
+            android:onClick="streeringAssist"/>
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9044413020226754/8578748314">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

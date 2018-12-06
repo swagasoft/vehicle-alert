@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#060606"
+    tools:context="coding.swagasoft.vehiclealert.BeamIndicatorActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView95"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/high_beam_indicator" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="High Beam Indicator"
+        android:textSize="50sp"
+        android:id="@+id/textView214"
+        android:layout_below="@+id/imageView95"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="The High Beam Indicator is a light on your car&apos;s instrumental panel which, as the name implies, indicates that your car&apos;s high beam headlights are on.  If you&apos;re driving in traffic at night and this indicator is lit, you&apos;re blinding other drivers around you. "
+        android:id="@+id/textView215"
+        android:layout_below="@+id/textView214"
+        android:textSize="30dp"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff" />
+</RelativeLayout>

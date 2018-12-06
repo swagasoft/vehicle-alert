@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:nestedScrollingEnabled="true"
+    android:fillViewport="true"
+    android:background="#050505"
+    tools:context="coding.swagasoft.vehiclealert.SpecialActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingRight="0dp"
+            android:paddingLeft="-10dp"
+            android:paddingBottom="50dp"
+            android:layout_height="wrap_content">
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Special Features"
+                android:id="@+id/textView8"
+                android:textSize="50dp"
+                android:textColor="#ffffff"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_activesuspension"
+                android:src="@drawable/active_suspension_warning"
+                android:onClick="suspensionWarningClick"
+                android:layout_below="@+id/textView8"
+                android:layout_toStartOf="@+id/imageButton_alertimdicator" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_alertimdicator"
+                android:src="@drawable/alert_indicator"
+                android:onClick="alertIndicatorClick"
+                android:layout_above="@+id/imageButton_easyaccess"
+                android:layout_toStartOf="@+id/imageButton_alerttimeindicator" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_alerttimeindicator"
+                android:src="@drawable/alert_time_indicator_symbol"
+                android:onClick="alertTimeInd"
+                android:layout_above="@+id/imageButton_econ"
+                android:layout_toStartOf="@+id/imageButton_autobraking" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_autobraking"
+                android:src="@drawable/auto_braking_indicator_symbol"
+                android:onClick="autoBrakingInd"
+                android:layout_above="@+id/imageButton_econ"
+                android:layout_alignEnd="@+id/textView8" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_awdvon"
+                android:src="@drawable/awd_v_on_indicator"
+                android:onClick="awdVindicator"
+                android:layout_below="@+id/imageButton_activesuspension"
+                android:layout_alignStart="@+id/imageButton_activesuspension" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton7_brakehold"
+                android:src="@drawable/brake_hold_indicator"
+                android:onClick="brakeHoldIndicator"
+                android:layout_above="@+id/imageButton_frostwarning"
+                android:layout_toStartOf="@+id/imageButton_easyaccess" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_easyaccess"
+                android:src="@drawable/easy_access_symbol"
+                android:onClick="easyAccessClik"
+                android:layout_above="@+id/imageButton_hual"
+                android:layout_toStartOf="@+id/imageButton_econ" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_econ"
+                android:src="@drawable/econ_indicator"
+                android:onClick="econIndicator"
+                android:layout_above="@+id/imageButton_hual"
+                android:layout_alignStart="@+id/imageButton_autobraking" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_ect"
+                android:src="@drawable/ect_power_indicator"
+                android:onClick="ectPowerClick"
+                android:layout_below="@+id/imageButton_awdvon"
+                android:layout_toStartOf="@+id/imageButton_engineimmobilizer" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_engineimmobilizer"
+                android:src="@drawable/engine_immobilizer"
+                android:onClick="engineImmobilizer"
+                android:layout_above="@+id/imageButton_keyfound"
+                android:layout_toStartOf="@+id/imageButton_frostwarning" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_frostwarning"
+                android:src="@drawable/frost_warning_indicator"
+                android:onClick="frostWarning"
+                android:layout_above="@+id/imageButton_keyquestion"
+                android:layout_alignStart="@+id/imageButton_easyaccess" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_hual"
+                android:src="@drawable/haul_indicator"
+                android:onClick="hualIndicatorClick"
+                android:layout_above="@+id/imageButton_keyquestion"
+                android:layout_alignStart="@+id/imageButton_econ" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_intelegentstart"
+                android:src="@drawable/intelligent_stop_start_indicator"
+                android:onClick="inteligentStopStart"
+                android:layout_below="@+id/imageButton_ect"
+                android:layout_toStartOf="@+id/imageButton_engineimmobilizer" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_keybattery"
+                android:src="@drawable/key_battery"
+                android:onClick="keyBatteryClick"
+                android:layout_above="@+id/imageButton_readythree"
+                android:layout_toStartOf="@+id/imageButton_keyfound" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_keyfound"
+                android:src="@drawable/key_found"
+                android:onClick="keyFoundClick"
+                android:layout_above="@+id/imageButton_sccdwarning"
+                android:layout_toStartOf="@+id/imageButton_keyquestion" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_keyquestion"
+                android:src="@drawable/key_question"
+                android:onClick="keyQuestionClick"
+                android:layout_above="@+id/imageButton_sccdwarning"
+                android:layout_alignStart="@+id/imageButton_hual" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_paws"
+                android:src="@drawable/p_aws_indicator"
+                android:onClick="pawsIndicatorClick"
+                android:layout_below="@+id/imageButton_intelegentstart"
+                android:layout_alignStart="@+id/imageButton_intelegentstart" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_predictive"
+                android:src="@drawable/predictive"
+                android:onClick="predictiveClick"
+                android:layout_above="@+id/imageButton_startstomal"
+                android:layout_toStartOf="@+id/imageButton_readythree" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_readythree"
+                android:src="@drawable/ready_indicator_two"
+                android:onClick="readyTwoClick"
+                android:layout_above="@+id/_suspensmal"
+                android:layout_alignStart="@+id/imageButton_keyfound" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_sccdwarning"
+                android:src="@drawable/sccd_warning_indicator"
+                android:onClick="sccdWarningClick"
+                android:layout_above="@+id/_suspensmal"
+                android:layout_alignStart="@+id/imageButton_keyquestion" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_sprtmade"
+                android:src="@drawable/sport_mode_indicator"
+                android:onClick="sportModeInDictor"
+                android:layout_below="@+id/imageButton_paws"
+                android:layout_alignStart="@+id/imageButton_paws" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_ssstart"
+                android:src="@drawable/sstarter_system_indicator"
+                android:onClick="sstarterClick"
+                android:layout_alignTop="@+id/imageButton_startstomal"
+                android:layout_toStartOf="@+id/imageButton_startstomal" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_startstomal"
+                android:src="@drawable/start_stop_malfunction_indicator"
+                android:onClick="startStopMalFunc"
+                android:layout_above="@+id/imageButton_upshift"
+                android:layout_alignStart="@+id/imageButton_readythree" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/_suspensmal"
+                android:src="@drawable/suspension_malfunction_indicator"
+                android:onClick="suspensionMalfunction"
+                android:layout_alignTop="@+id/imageButton_startstomal"
+                android:layout_alignStart="@+id/imageButton_sccdwarning" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_topindocate"
+                android:src="@drawable/top_indicator"
+                android:onClick="topIndicator"
+                android:layout_below="@+id/imageButton_sprtmade"
+                android:layout_alignStart="@+id/textView8" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_towmadetwo"
+                android:src="@drawable/tow_mode_indicator"
+                android:onClick="towModeIndicator"
+                android:layout_alignTop="@+id/imageButton_topindocate"
+                android:layout_toStartOf="@+id/imageButton_trackindicator" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_trackindicator"
+                android:src="@drawable/trac_indicator"
+                android:onClick="trackIndicatorClick"
+                android:layout_alignTop="@+id/imageButton_upshift"
+                android:layout_alignStart="@+id/imageButton_startstomal" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_upshift"
+                android:layout_alignBottom="@+id/imageButton_towmadetwo"
+                android:layout_alignStart="@+id/imageButton_sccdwarning"
+                android:src="@drawable/up_shift_indicator"
+                android:onClick="shiftIndicatorClick"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_upshifttwo"
+                android:src="@drawable/up_shift_light"
+                android:onClick="upShiftLight"
+                android:layout_below="@+id/imageButton_trackindicator"
+                android:layout_toStartOf="@+id/imageButton_towmadetwo" />
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/imageButton_upshifttwo" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9044413020226754/8578748314">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

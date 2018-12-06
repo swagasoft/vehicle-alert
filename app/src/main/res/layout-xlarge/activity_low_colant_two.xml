@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#060606"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="coding.swagasoft.vehiclealert.LowColantTwoActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView50"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/low_coolant_four" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Low Coolant Indicator"
+        android:textColor="#ffffff"
+        android:textSize="50sp"
+        android:id="@+id/textView130"
+        android:layout_below="@+id/imageView50"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="This indicates that the engine’s cooling system is low on fluid. Topping off the cooling system fluid — with the engine cool — may resolve the issue. However, bad coolant sensor can also indicate the it up if the coolant system is ok. Most a time, a simple re filling can turn off this indicator "
+        android:id="@+id/textView133"
+        android:layout_below="@+id/textView130"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

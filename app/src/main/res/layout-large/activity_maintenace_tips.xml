@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:scrollbarSize="600dp"
+    android:nestedScrollingEnabled="true"
+    android:fillViewport="true"
+    android:background="#0e0e0e"
+    tools:context="coding.swagasoft.vehiclealert.MaintenaceTipsActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Maintenance Tips"
+            android:textSize="40sp"
+            android:id="@+id/textView373"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="1. Inspect your vehicle on regular base ."
+            android:id="@+id/textView374"
+            android:layout_below="@+id/textView373"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="3. Learn the meaning of different warning light."
+            android:id="@+id/textView377"
+            android:layout_below="@+id/textView378"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="2. Drive with care every day."
+            android:id="@+id/textView378"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:layout_below="@+id/textView374"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="4. Check tire pressure."
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:id="@+id/textView379"
+            android:layout_below="@+id/textView377"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="5. Do not race your car&apos;s engine during start-up."
+            android:id="@+id/textView380"
+            android:layout_below="@+id/textView379"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="6. Accelerate slowly when you begin your drive. "
+            android:id="@+id/textView381"
+            android:layout_below="@+id/textView380"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="7. Warming the engine by letting it idle in the driveway is not a smart idea."
+            android:id="@+id/textView382"
+            android:layout_below="@+id/textView381"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="8. Put less strain on your engine and automatic transmission by shifting to neutral at red lights. Otherwise, the engine is still working to push the car even while it&apos;s stopped."
+            android:id="@+id/textView383"
+            android:layout_below="@+id/textView382"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="9. Avoid driving at high speeds and accelerating quickly, especially when it&apos;s very hot or very cold outside."
+            android:id="@+id/textView384"
+            android:layout_below="@+id/textView383"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="10. Extend the life of your tires with careful driving."
+            android:id="@+id/textView385"
+            android:layout_below="@+id/textView384"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="11. When turning your steering wheel, don&apos;t hold it in an extreme right or left position for more than a few seconds. Doing so can damage the power-steering pump."
+            android:id="@+id/textView386"
+            android:layout_below="@+id/textView385"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="12. Buy gas at reputable service stations."
+            android:id="@+id/textView387"
+            android:layout_below="@+id/textView386"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="13. Rotate tires and have alignment checked."
+            android:id="@+id/textView388"
+            android:layout_below="@+id/textView387"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="14. Check drive belts."
+            android:id="@+id/textView389"
+            android:layout_below="@+id/textView388"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="15. Check oil level."
+            android:textColor="#ffffff"
+            android:id="@+id/textView390"
+            android:textSize="25dp"
+            android:layout_below="@+id/textView389"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="16. Go easy when you&apos;re stuck."
+            android:id="@+id/textView391"
+            android:layout_below="@+id/textView390"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="17. Choose a good car insurer."
+            android:id="@+id/textView392"
+            android:layout_below="@+id/textView391"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="25dp"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="18. Keep leather from drying out and cracking."
+            android:id="@+id/textView393"
+            android:layout_below="@+id/textView392"
+            android:layout_alignEnd="@+id/textView374" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="19. Protect car paint from the sun."
+            android:id="@+id/textView394"
+            android:layout_below="@+id/textView393"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="20. Don&apos;t try to carry too much."
+            android:id="@+id/textView395"
+            android:layout_below="@+id/textView394"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="21. Maintain proper inflation.  Check tires when they are cold (driven for less than one mile) for an accurate reading."
+            android:id="@+id/textView396"
+            android:layout_below="@+id/textView395"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="22. Check Engine coolant level."
+            android:id="@+id/textView397"
+            android:layout_below="@+id/textView396"
+            android:textColor="#ffffff"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="23. Replace spark plugs."
+            android:id="@+id/textView398"
+            android:layout_below="@+id/textView397"
+            android:textColor="#ffffff"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="25dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="24. Rotate your tires"
+            android:id="@+id/textView399"
+            android:layout_below="@+id/textView398"
+            android:textColor="#ffffff"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="25. Top off your brake fluid."
+            android:id="@+id/textView400"
+            android:layout_below="@+id/textView399"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="26. Change Engine oil frequently."
+            android:id="@+id/textView401"
+            android:layout_below="@+id/textView400"
+            android:textColor="#ffffff"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="27. Don&apos;t forget the Engine Oil filters."
+            android:id="@+id/textView402"
+            android:layout_below="@+id/textView401"
+            android:textColor="#ffffff"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="28. Check the air filter every two months and replace it when dirty or as part of a tune-up. "
+            android:id="@+id/textView403"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/textView402"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="29. Change your transmission fluid filter after the first 5,000 miles (8,000 km) of driving and every 25,000 miles (40,000 km) or two years thereafter."
+            android:id="@+id/textView404"
+            android:layout_below="@+id/textView403"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="30. Dilute your Radiator coolant."
+            android:id="@+id/textView405"
+            android:layout_below="@+id/textView404"
+            android:textSize="25dp"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="31. Don&apos;t forget to flush your cooling system.  Failing to do so can damage your radiator, clog your heater core, and cause the thermostat and water pump to fail. "
+            android:id="@+id/textView406"
+            android:layout_below="@+id/textView405"
+            android:textSize="25dp"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="32. Check power-steering fluid."
+            android:id="@+id/textView407"
+            android:textSize="25dp"
+            android:layout_below="@+id/textView406"
+            android:layout_alignParentStart="true" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

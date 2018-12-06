@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#060606"
+
+    tools:context="coding.swagasoft.vehiclealert.EconIndicatorActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView142"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/econ_indicator" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Economy Mode Operation"
+        android:textColor="#ffffff"
+        android:id="@+id/textView312"
+        android:textSize="50dp"
+        android:layout_below="@+id/imageView142"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="When the ECON mode is activated, several operating characteristics of the vehicle are modified for enhanced fuel efficiency.  If activated, you&apos;ll see reduced acceleration, air conditioning and – potentially – a louder engine note.  "
+        android:id="@+id/textView313"
+        android:layout_below="@+id/textView312"
+        android:textColor="#ffffff"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

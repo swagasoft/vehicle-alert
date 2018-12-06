@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#060606"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="coding.swagasoft.vehiclealert.SccdActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView154"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/sccd_warning_indicator" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Smart Cruise Control Warning"
+        android:textColor="#ffffff"
+        android:textSize="50sp"
+        android:id="@+id/textView290"
+        android:layout_below="@+id/imageView154"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Once engaged, the adaptive cruise control will allow you to choose a set distance from cars ahead of you. If the computer sees the gap closing ahead of you, it will apply the brakes to slow your vehicle down and will warn you with an audible chime, flashing lights, or a combination of the two. The brakes won’t be used at full power so you should be ready to step on the brakes if needed.  This indicates a problem with the Smart or Active Cruise Control system that your dealer will need to resolve. "
+        android:id="@+id/textView291"
+        android:layout_below="@+id/textView290"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

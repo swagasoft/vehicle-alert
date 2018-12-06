@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#060606"
+
+    tools:context="coding.swagasoft.vehiclealert.EveModeTwoActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView113"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/eve_mode_indicator_symbol" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" EV (electric vehicle) MODE "
+        android:id="@+id/textView247"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/imageView113"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="If you&apos;re driving in an area where you need to be quiet, press the ( EV mode) button to run the electric motor only(battery only). EV Mode allows you to operate your vehicle Hybrid as a fully electric vehicle at speeds up to about 25 mph for a limited range.  This indicator shows you have successfully activated the EV-mode.   "
+        android:id="@+id/textView248"
+        android:layout_below="@+id/textView247"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

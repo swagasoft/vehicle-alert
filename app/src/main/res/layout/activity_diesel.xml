@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:nestedScrollingEnabled="true"
+    android:background="#050505"
+    tools:context="coding.swagasoft.vehiclealert.DieselActivity">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingRight="0dp"
+        android:paddingLeft="-10dp"
+        android:paddingBottom="50dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="diesel Power"
+            android:id="@+id/textView9"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_adbluefill"
+            android:src="@drawable/adblue_fill"
+            android:onClick="adblueClick"
+            android:layout_below="@+id/textView9"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_admain"
+            android:src="@drawable/adblue_maint"
+            android:onClick="adblueMaintenace"
+            android:layout_alignTop="@+id/imageButton_adbluefill"
+            android:layout_toEndOf="@+id/imageButton_adbluefill" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_dieselexhaurstfil"
+            android:layout_alignBottom="@+id/imageButton_admain"
+            android:layout_toEndOf="@+id/imageButton_admain"
+            android:src="@drawable/diesel_exhaust_filter"
+            android:onClick="dieselExhaurst"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_dieseexfil2"
+            android:layout_alignBottom="@+id/imageButton_dieselexhaurstfil"
+            android:layout_toEndOf="@+id/imageButton_dieselexhaurstfil"
+            android:src="@drawable/diesel_exhaust_filtertwo"
+            android:onClick="exhurstFilterTwo"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_psrticulateone"
+            android:src="@drawable/diesel_particulate_filter_symbo"
+            android:onClick="perticulateClickFilter"
+            android:layout_below="@+id/imageButton_adbluefill"
+            android:layout_toStartOf="@+id/imageButton_admain" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_particulatetwo"
+            android:layout_alignBottom="@+id/imageButton_psrticulateone"
+            android:layout_toEndOf="@+id/imageButton_psrticulateone"
+            android:src="@drawable/diesel_particulate_filter_symbol"
+            android:onClick="paticluteTwoClick"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_glowplug"
+            android:layout_alignBottom="@+id/imageButton_particulatetwo"
+            android:layout_toEndOf="@+id/imageButton_particulatetwo"
+            android:src="@drawable/glow_plug_symbol_indicator"
+            android:onClick="glowPlugClick"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_waterone"
+            android:layout_alignBottom="@+id/imageButton_glowplug"
+            android:layout_toEndOf="@+id/imageButton_glowplug"
+            android:src="@drawable/water_in_fuel_indicator"
+            android:onClick="waterInFuelClick"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonwatertwo"
+            android:src="@drawable/water_in_fuel_indicatortwo"
+            android:onClick="waterinfuelTwo"
+            android:layout_below="@+id/imageButton_psrticulateone"
+            android:layout_toStartOf="@+id/imageButton9" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton9"
+            android:src="@drawable/water_trap_indicator"
+            android:onClick="waterTrapClick"
+            android:layout_alignTop="@+id/imageButtonwatertwo"
+            android:layout_alignStart="@+id/imageButton_particulatetwo" />
+
+
+
+    </RelativeLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9044413020226754/8578748314">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

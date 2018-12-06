@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#060606"
+
+    tools:context="coding.swagasoft.vehiclealert.EmlIndicatorActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView69"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/eml_indicator" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" Engine Management Light (EML) "
+        android:id="@+id/textView160"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/imageView69"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="The Engine Management Light can illuminate for a number of reasons. The light is connected to your car&apos;s engine control unit (ECU), and is the first indicator of issues with the engine&apos;s electronic &apos;brain&apos;. This controls things such as the fuel and air mixture and the ignition timing to help your car&apos;s engine run smoothly. If the engine management light stays on when you turn on the ignition, or if it comes on while you&apos;re driving, it means there might be a problem in the engine room. "
+        android:id="@+id/textView161"
+        android:layout_below="@+id/textView160"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

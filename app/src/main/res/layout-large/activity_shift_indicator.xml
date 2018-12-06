@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#060606"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="coding.swagasoft.vehiclealert.ShiftIndicatorActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView162"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/up_shift_indicator" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="   The upshift indicator light on the dashboard came on while in 5th (highest) gear on level and most vehicle manufacturers use this light in vehicles with manual transmissions to indicate when it is best to shift to a higher gear for optimum fuel economy.  "
+        android:id="@+id/textView344"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView345"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Up Shift Light Indicator"
+        android:id="@+id/textView345"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/imageView162"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

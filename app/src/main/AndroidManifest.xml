@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="coding.swagasoft.vehiclealert" >
+
+
+    <supports-screens
+        android:largeScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true"
+        android:normalScreens="true"
+        android:resizeable="true"></supports-screens>
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/oil_trouble_indicator"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".MainActivity">
+        </activity>
+
+        <activity android:name=".WarningActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SafetyActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".CommonActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".LightingActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".AdvanceActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SpecialActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".DieselActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".HelpActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".BrakeLowActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".BrakeTextActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".BraketrocanadaActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ChargesystroActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".DoorAjarActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".DriveTrainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ExternalSoundActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".HybridServiceActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".HighVoltagefaultActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".batteryTRoMainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".hybridWarningActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".KynotFoundActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".LockActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".CoolantWarnActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".LowOilLevelActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".MasterWarningActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".OilTroubleActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".OpenHoodActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ParkBrakeActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".PowerTrainTroActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".RearBeltWarnActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SecurityIndiActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ServiceElectBreakActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SrsTextActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".AirBagBallActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SteeringTroubleActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".TempWarnActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".TransmissionTempActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".AsarActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".AwdMalfuncActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".AbsCanadaActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".AbsUsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".FilterClongActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".AllWheelDisableActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".BrakeActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SetBrakeWearActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".CatalystActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ChechEngineActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".CheckLighttwoActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".CheckLIght3Activity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".GasCapActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".electricParkBrakeActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ElectShiftMalActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ElectThrotleActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ElectBrakeConttro2Activity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".KeyFobActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".LambaIndicatorActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".LiftServiceIndActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".LowColantActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".LowColantTwoActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".LowColontFourActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".MessageIndicatorActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".OilMinimumActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".RearBeltSafety2Activity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ReduceEnginePowActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ServiceLightActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".LowColantthreeActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ShiftlocIndActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SideAirBagOffActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SpannerServiceActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".StabilityFaultOneActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".StabilityFaultTwoActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".tireArrowActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".TirePressureTwoActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".TransmissionActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".AllWheelActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".BlissActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ChargingActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".EngineOperatorClickActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ElectronicDiffActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".EmlIndicatorActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".EngineActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".EngineStartTwoActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".EtcsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".EuroAbsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".FourLowActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".FourTimesFourActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".FourWDlockActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".LowFuelClickActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".LowPowerActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".LowWasherFluidActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SlipIndictorActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".PowerLimitationActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".RearLock2Activity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ServiceRemindActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ManualActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".TractionContrlActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".VdcActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SlipOffIndicatorActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".OverDriveActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".HighVoltSistemFaultActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".AutoDimmerActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".CorneringMalfuncActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".DayTimeRunningActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".FogLampIndicatorActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".HeadLampOutActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".HeadlampSymbolActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".HeadLevelingActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".HeadMalfunctionActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".BeamIndicatorActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".HighBeamAssistanceActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".LampOutActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".RearFogLamoActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".StopLightClickActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".TailLightActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".TailLightOutctivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".TurnSignalActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".AdaptiveActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".AdaptiveCruiseActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SysetemServiceindActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".AslActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".BlindSpotActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".CongActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ColissionActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".CrawlControlActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".DistanceWarningActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".EVmodeActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".EveModeTwoActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".FollowModeClickActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ForwardAlertModeActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ForwardColssionFaultActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".FrontEndCollisionActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".GradeAssistActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".HillStartActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".LaneDepatureActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".LaneDepaWarnActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".LaneDapatureTwoActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".NightVionActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".NightVionTwoActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ParkingAsistanceActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ParkingAssistTwoActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".PedestrainSoundActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".PedestrianWarningActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".PedestrainWarn2Activity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".PlugIndicatorActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".RaderBlockedActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".RadarIndicatorActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SensorBlockedActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SteeringAssistActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".MaintenaceTipsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SuspensionWarningActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".AlertIndicatorActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".AlertTimeActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".AutoBrakingActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".AwdVindicatorActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".brakeHoldInActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".EasyAcessActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".EconIndicatorActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".EctPowerActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".EngineImmobilizerActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".FrostWarnigActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".HualIndicatorActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".IntegentStopStartActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".KeyBatteryActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".KeyFoundActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".KeyQuestionActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".PawsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".PredictiveActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ReadyTwoActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SccdActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".MaiSportModeActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SstartActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".StartStopMalfuncActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SuspensionMalfActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".TopIndicatorActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".TowModeIncatorActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".TrackIndicatorActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ShiftIndicatorActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".UpshiftActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".adblueFillActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".AdblueMaintenaceActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".DieselExhaurstActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ExhuarstFilterTwoActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".PerticulateFilterActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".PerticulateTwoActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".glowPlugActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".WaterInFuelActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".WaterInfuelTwoActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".WatertrapActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".TrunckAjarActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SlipRealActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".OilLevelensorActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+    </application>
+
+</manifest>

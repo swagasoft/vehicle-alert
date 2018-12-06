@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#060606"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="coding.swagasoft.vehiclealert.StartStopMalfuncActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView157"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/start_stop_malfunction_indicator" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Stop-start system automatically shuts down and restarts the internal combustion engine to reduce the amount of time the engine spends idling, thereby reducing fuel consumption and emissions. This is most advantageous for vehicles which spend significant amounts of time waiting at traffic lights or frequently come to a stop in traffic jams.  On a manual transmission vehicle, stop-start is activated as follows: Stop car and press clutch - move gear lever to neutral - release clutch - then the engine stops. The engine won&apos;t stop if the car is moving "
+        android:id="@+id/textView337"
+        android:textSize="30dp"
+        android:layout_below="@+id/textView338"
+        android:textColor="#ffffff"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Start-stop system"
+        android:id="@+id/textView338"
+        android:layout_below="@+id/imageView157"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

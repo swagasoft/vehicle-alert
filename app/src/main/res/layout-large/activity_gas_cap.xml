@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#060606"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="coding.swagasoft.vehiclealert.GasCapActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView41"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/check_gas_cap" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Check Gas Cap"
+        android:id="@+id/textView92"
+        android:textSize="40sp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/imageView41"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="When the Check Fuel Cap Light comes on in the dashboard, this may indicate that the fuel cap has not been affixed onto the fuel tank filler tube properly, the fuel cap is missing from the fuel tank filler tube, or that the fuel cap is damaged in some way.   Fuel is able to flow through the fuel system when it is pressurized. Pressurized fuel is able to be achieved when the fuel cap is tightly secured to the fuel tank, creating a vacuum seal. Do some inspection on the gas cap or fasting properly. "
+        android:id="@+id/textView93"
+        android:layout_below="@+id/textView92"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
